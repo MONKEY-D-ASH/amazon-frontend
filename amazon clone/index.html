@@ -84,7 +84,7 @@
 
     <div class="hero_section">
 
-        <div class="floating_div"><p>You are on amazon.com. You can also shop on Amazon India for millions of products with fast local delivery. <a href="#">Click here to go to amazon.in</a></p></div>
+        <div class="floating_div"><p>You are on amazon.com. You can also shop on Amazon India for millions of products with fast local delivery. <a id="realOne" href="#">Click here to go to amazon.in</a></p></div>
 
     </div>
 
@@ -94,49 +94,61 @@
 
     <div class="shop_section">
 
-        <div class="section1 default">
+        <div class="section1 default work">
             <div class="shop_section_description">Shop for your home essentials</div>
             <div class="shop_section_image" style="background-image: url('bed.jpg');"></div>
             <a class="shop_section_link" href="#">Shop gaming</a>
         </div>
 
-        <div class="section2 default">
+        <div class="section2 default work">
             <div class="shop_section_description">Get your game on</div>
             <div class="shop_section_image" style="background-image: url('gaming\ image.jpg');"></div>
             <a class="shop_section_link" href="#">Discover more in home</a>
         </div>
 
-        <div class="section3 default">
+        <div class="section3 default work">
             <div class="shop_section_description">Fashion trends you like</div>
             <div class="shop_section_image" style="background-image: url('jackets.jpg');"></div>
             <a class="shop_section_link" href="#">Explore more</a>
         </div>
         
-        <div class="section4 default">
+        <div class="section4 default work">
             <div class="shop_section_description">Top categories in Kitchen and appliances</div>
             <div class="shop_section_image_4"></div>
             <a class="shop_section_link" href="#">Explore all products in Kitchen</a>
         </div>
 
-        <div class="section5 default2">
+        <div class="section5 default work">
             <div class="shop_section_description">Shop fashion for less</div>
             <div class="shop_section_image" style="background-image: url('jackets.jpg');"></div>
             <a class="shop_section_link" href="#">Explore more</a>
         </div>
 
-        <div class="section6 default2">
+        <div class="section6 default2 work">
             <div class="shop_section_description">New Home arrivals for $50</div>
             <div class="shop_section_image" style="background-image: url('jackets.jpg');"></div>
             <a class="shop_section_link" href="#">Explore more</a>
         </div>
 
-        <div class="section7 default2">
+        <div class="section7 default2 work">
             <div class="shop_section_description">Refresh your space</div>
             <div class="shop_section_image" style="background-image: url('jackets.jpg');"></div>
             <a class="shop_section_link" href="#">Explore more</a>
         </div>
 
-        <div class="section8 default2">
+        <div class="section8 default2 work">
+            <div class="shop_section_description">Easy updates for elevated spaces</div>
+            <div class="shop_section_image_8" style="background-image: url('jackets.jpg');"></div>
+            <a class="shop_section_link" href="#">Explore more</a>
+        </div>
+
+        <div class="section9 default2 work">
+            <div class="shop_section_description">Easy updates for elevated spaces</div>
+            <div class="shop_section_image_8" style="background-image: url('jackets.jpg');"></div>
+            <a class="shop_section_link" href="#">Explore more</a>
+        </div>
+
+        <div class="section10 default2 work">
             <div class="shop_section_description">Easy updates for elevated spaces</div>
             <div class="shop_section_image_8" style="background-image: url('jackets.jpg');"></div>
             <a class="shop_section_link" href="#">Explore more</a>
@@ -211,6 +223,20 @@
 </body>
 
 <script>
+    const real = document.querySelector('#realOne')
+    real.addEventListener('click', function(e){
+        window.location.href = 'https://www.amazon.com';
+    })
+
+    const object = document.querySelectorAll('.work')
+
+    object.forEach(element => {
+        element.addEventListener('click', function(e){
+            window.location.href = 'https://www.amazon.com';
+        })
+    });
+
+    
     
 </script>
 </html>

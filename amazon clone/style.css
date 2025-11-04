@@ -333,7 +333,7 @@
     background-color: white;
     position: absolute;
     top: 409px;
-    
+    border-radius: 5%;
 }
 
 .section1{
@@ -367,23 +367,41 @@
     background-color: white;
     position: absolute;
     top: 869px;
+    border-radius: 5%;
 }
 
 .section5{
-    left: 30px;
+    left: 1510px;
 }
 
 .section6{
-    left: 400px;
+    left: 30px;
 }
 
 .section7{
-    left: 770px;
+    left: 400px;
 }
 
 .section8{
+    left: 770px;
+}
+
+.section9{
     left: 1140px;
 }
+
+.section10{
+    left: 1510px;
+}
+
+.work{
+     transition: transform 0.2s ease-in-out, background-color 0.1s linear;
+}
+.work:hover{
+    transform: scale(1.025);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 2);
+}
+
 .shop_section_image_8{
     width: 310px;
     height: 275px;
